@@ -1,16 +1,17 @@
-import HomeNav from "./components/navs/Home-Nav";
-import Footer from "./components/Footer";
+import HomeNav from "./components/navbars/Home-Nav";
 import Image from "next/image";
 import ServicesOffered from "./components/Services-offered";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen  flex-col items-center justify-between p-10 border border-red">
       <HomeNav />
-      <section className="text-gray-400 bg-gray-900 body-font">
+      <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Before they sold out
               <br className="hidden lg:inline-block" />
               readymade gluten
@@ -25,7 +26,7 @@ export default function Home() {
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Button
               </button>
-              <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 Button
               </button>
             </div>
@@ -37,11 +38,12 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-            />
+            />{" "}
           </div>
         </div>
       </section>
       <ServicesOffered />
+      <Contact />
       <Footer />
     </main>
   );
