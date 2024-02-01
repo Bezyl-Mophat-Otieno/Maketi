@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-gray-600 body-font border border-black w-screen ">
+    <footer className="text-gray-600 body-font  w-screen ">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <Link
           href={""}
